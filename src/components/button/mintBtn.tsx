@@ -30,7 +30,7 @@ export default function MintBtn() {
   const mintNFT = async () => {
     try {
       const isSufficientFund: boolean =
-        Number(data?.value ?? 0) <= parseGwei(costValue.gwei)
+        Number(data?.value ?? 0) >= parseGwei(costValue.gwei)
 
       setIsSufficientFund(isSufficientFund)
 
