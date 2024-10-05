@@ -37,9 +37,8 @@ export default function DAODetail({
 
   // Wallet
   const { openConnectModal } = useConnectModal()
-  const { isConnected } = useAccount()
+  const { isConnected, address } = useAccount()
   const contractAddress = process.env.NEXT_PUBLIC_CONTRACT_ADDRESS
-  const address: string = '0x1c3294B823cF9ac62940c64E16bce6ebAf7dca5B'
 
   const [voteCount, setVoteCount] = useState<number>(0)
   const [availableNFTIds, setAvailableNFTIds] = useState<Array<any>>([])
