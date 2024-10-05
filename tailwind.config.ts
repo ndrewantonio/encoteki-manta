@@ -41,6 +41,9 @@ module.exports = {
           90: '#F6F6EC',
           99: '#F9F9F6',
         },
+        red: {
+          90: '#FBE8E2',
+        },
       },
     },
   },
